@@ -4,4 +4,13 @@
     <string name="ButtonText">je suis un bouton</string>
     <string name="LoginText">identifiant</string>
     <string name="PasswordText">mot de passe</string>
+    <string name="NameText">texte de nom</string>
+    <string name="SwitchText">commutateur</string>
+    <string name="RadioButtonText">bouton radio</string>
+    <string name="CheckboxText">case à cocher</string>
+    <string name="dialog_message">message de dialogue</string>
+    <string name="dialog_title">Titre</string>
+    <string name="ok">Daccord</string>
+    <string name="cancel">Annuler</string>
+    <string name="startChat">démarrer la discussion</string>
 </resources>

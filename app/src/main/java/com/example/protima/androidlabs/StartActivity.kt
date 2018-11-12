@@ -1,6 +1,7 @@
 package com.example.protima.androidlabs
 
 import android.app.Activity
+import android.app.ListActivity
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -27,6 +28,21 @@ class StartActivity : Activity() {
 
             startActivityForResult(newActivity, 50)
         })
+
+        var button2 = findViewById(R.id.startChat) as? Button
+        button2?.setOnClickListener(View.OnClickListener {
+
+            val newActivity = Intent( this,ChatWindow::class.java);
+            startActivityForResult(newActivity, 200)
+        })
+
+        var button3 = findViewById(R.id.weatherForecast) as? Button
+        button3?.setOnClickListener(View.OnClickListener {
+
+            val newActivity = Intent( this,WeatherForecast::class.java);
+            startActivityForResult(newActivity, 200)
+        })
+
         }
 
     override fun onStart()
@@ -60,13 +76,13 @@ class StartActivity : Activity() {
         Log.i(ACTIVITY_NAME,"In onDestroy()")
     }
 
-    override fun onActivityResult(request:Int, result:Int, data:Intent)
+    override fun onActivityResult(request:Int, result:Int, data:Intent?)
     {
         if (request==50) {
             Log.i("ACTIVITY_NAME", "Returned to StartActivity.onActivityResult")
 
             if (result == Activity.RESULT_OK) {
-                val messagePassed = data.getStringExtra("Response")
+                val messagePassed = data?.getStringExtra("Response")
                 val duration = Toast.LENGTH_SHORT
                 val toast = Toast.makeText(this, messagePassed, duration)
                 toast.show()

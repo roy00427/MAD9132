@@ -4,4 +4,16 @@
     <string name="ButtonText">I\'am a button</string>
     <string name="LoginText">Login Name</string>
     <string name="PasswordText">Type Password</string>
+    <string name="NameText">Name</string>
+    <string name="SwitchText">Switch</string>
+    <string name="RadioButtonText">Radio Button</string>
+    <string name="CheckboxText">Check Box</string>
+    <string name="dialog_message">Dialog Message</string>
+    <string name="dialog_title">Title</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="startChat">Start Chat</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
